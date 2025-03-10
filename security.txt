@@ -1,0 +1,5 @@
+Contact: mailto:security@toolverse.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Policy: https://toolverse.com/security-policy
+Hiring: https://toolverse.com/careers
