@@ -7,20 +7,20 @@ function updateFilePaths(filePath) {
     
     // Update header and footer fetch paths
     content = content.replace(
-        /fetch\('\/components\/(header|footer)\.html'\)/g,
-        (match, component) => `fetch('../../components/${component}.html')`
+        /fetch\('(?:\.\.\/)*components\/(header|footer)\.html'\)/g,
+        (match, component) => `fetch('/toolverse/components/${component}.html')`
     );
     
     // Update navigation links
     content = content.replace(
-        /href="\/(tools\/[^"]+)"/g,
-        (match, path) => `href="../../${path}"`
+        /href="(?:\.\.\/)*(?:tools\/[^"]+)"/g,
+        (match, path) => match.replace(/href="(?:\.\.\/)*/, 'href="/toolverse/')
     );
     
     // Update home link
     content = content.replace(
-        /href="\/"/g,
-        'href="../../index.html"'
+        /href="(?:\.\.\/)*index\.html"/g,
+        'href="/toolverse"'
     );
     
     fs.writeFileSync(filePath, content);
@@ -37,10 +37,11 @@ function processDirectory(dir) {
         if (stat.isDirectory()) {
             processDirectory(filePath);
         } else if (file.endsWith('.html')) {
+            console.log(`Updating paths in: ${filePath}`);
             updateFilePaths(filePath);
         }
     });
 }
 
-// Process all HTML files in the tools directory
-processDirectory(path.join(__dirname, 'tools')); 
+// Process all HTML files in the project
+processDirectory('.'); 
