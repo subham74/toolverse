@@ -1,130 +1,99 @@
-# Toolverse - Your Ultimate Online Tools Collection
+# Toolverse
 
-Toolverse is a comprehensive collection of 100+ free online tools designed to help users with various tasks, from image processing to development utilities. The platform features a modern, responsive design and is built using core HTML, CSS, and JavaScript.
+A comprehensive collection of online tools and calculators for various purposes. Built with modern web technologies and designed for ease of use.
 
 ## Features
 
-- 🎨 Modern and responsive design
-- 🔍 Real-time tool search functionality
-- 📱 Mobile-first approach
-- 🚀 Fast loading with minimal dependencies
-- 🎯 SEO optimized
-- 💰 Ad integration ready
+- 🚀 Fast and efficient tools
+- 📱 Mobile-friendly interface
+- 🔒 Secure and reliable
+- 🔄 Regular updates
+- 🎨 Modern design
+- 📚 Comprehensive documentation
+- 👥 Community driven
+- 💻 Open source
 
-## Tech Stack
+## Available Tools
 
-- HTML5
-- CSS3 (with custom properties and modern features)
-- Vanilla JavaScript (ES6+)
-- Bootstrap 5.3.2
-- Font Awesome 6.4.2
+### Unit Converters
+- Universal Unit Converter
+- Length Converter
+- Weight/Mass Converter
+- Temperature Converter
+- Volume Converter
+- Speed Converter
+- Data Storage Converter
+- Energy Converter
+- Pressure Converter
+- Fuel Efficiency Converter
+- Angle Converter
 
-## Project Structure
+### Math Calculators
+- Scientific Calculator
+- Percentage Calculator
+- Age Calculator
+- BMI Calculator
+- Loan EMI Calculator
+- Discount Calculator
+- Tip Calculator
 
-```
-toolverse/
-├── index.html              # Main landing page
-├── styles.css             # Global styles
-├── main.js               # Core JavaScript functionality
-├── components/           # Reusable components
-│   ├── header.html      # Navigation header
-│   └── footer.html      # Site footer
-├── tools/               # Individual tool pages
-│   ├── image-tools/     # Image processing tools
-│   ├── seo-tools/       # SEO utilities
-│   ├── text-tools/      # Text processing tools
-│   └── ...             # Other tool categories
-└── assets/             # Images, icons, and other static files
-```
+### Time Tools
+- Time Difference Calculator
+- Countdown Timer
+- Time Zone Converter
 
 ## Getting Started
+
+### Local Development
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/toolverse.git
-```
-
-2. Navigate to the project directory:
-```bash
 cd toolverse
 ```
 
-3. Open `index.html` in your web browser or use a local server:
+2. Install dependencies:
 ```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve
+npm install
 ```
 
-## Tool Categories
+3. Start the development server:
+```bash
+npm start
+```
 
-1. Image Tools
-   - Image to PNG Converter
-   - Image to JPG Converter
-   - Image Resizer
-   - Image Compressor
-   - And more...
+4. Open your browser and navigate to:
+```
+http://localhost:8000
+```
 
-2. SEO Tools
-   - Meta Tag Generator
-   - Keyword Density Checker
-   - Sitemap Generator
-   - And more...
+### GitHub Pages Deployment
 
-3. Text Tools
-   - Word Counter
-   - Character Counter
-   - Case Converter
-   - And more...
+1. Go to your repository settings
+2. Navigate to "Pages" section
+3. Select "main" branch as the source
+4. Save the changes
 
-4. Developer Tools
-   - JSON Formatter
-   - HTML to Markdown Converter
-   - CSS Minifier
-   - And more...
-
-5. Calculators
-   - Percentage Calculator
-   - Age Calculator
-   - BMI Calculator
-   - And more...
-
-6. Converters
-   - Length Converter
-   - Weight Converter
-   - Speed Converter
-   - And more...
-
-7. Security Tools
-   - MD5 Hash Generator
-   - SHA256 Hash Generator
-   - Password Generator
-   - And more...
-
-8. Social Media Tools
-   - YouTube Thumbnail Downloader
-   - Instagram Photo Downloader
-   - Twitter Video Downloader
-   - And more...
+Your site will be available at:
+```
+https://yourusername.github.io/toolverse
+```
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For any questions or suggestions, please reach out to us at:
-- Email: contact@toolverse.com
-- Website: https://toolverse.com
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Bootstrap for the responsive framework
-- Font Awesome for the icons
-- All contributors who help improve this project 
+- Bootstrap 5 for the UI framework
+- Font Awesome for icons
+- Inter font family for typography
+- All contributors and users of the project 
